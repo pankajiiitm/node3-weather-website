@@ -10,7 +10,7 @@ callback('unable to connect to weather service',undefined)
 callback('unable to find location',undefined)
     }
     else {
-callback(undefined,'it is currently ' +body.current.temperature + ' Celsius out .and it feelslike '+ body.current.feelslike+' but there is '+ body.current.weather_descriptions[0]+'!')
+callback(undefined, body.current.weather_descriptions[0]+ " .It is currently " + body.current.temperature +" degress out. It feels like " +body.current.feelslike +" degress out. The humidity is "+body.current.humidity+"%. " )
     }
 
 })
